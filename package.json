@@ -1,6 +1,6 @@
 {
-  "name": "ember-cli-deploy-s3-index",
-  "version": "1.2.0",
+  "name": "@marketcircle/ember-cli-deploy-s3-index",
+  "version": "1.2.1",
   "description": "Ember CLI Deploy plugin to deploy ember-cli's bootstrap index file to S3.",
   "directories": {
     "doc": "doc",
@@ -10,18 +10,18 @@
     "release": "release-it",
     "test": "node tests/runner.js && ./node_modules/.bin/eslint index.js lib/* tests/**/*.js"
   },
-  "repository": "https://github.com/ember-cli-deploy/ember-cli-deploy-s3-index",
+  "repository": "https://github.com/Marketcircle/ember-cli-deploy-s3-index",
   "engines": {
     "node": ">= 4"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "github": "^0.2.4",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "ember-cli": "~3.18.0",
     "eslint": "^7.0.0",
+    "github": "^0.2.4",
     "glob": "^7.1.6",
     "mocha": "^7.1.2",
     "release-it": "*"
@@ -45,5 +45,8 @@
     "github": {
       "release": true
     }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
